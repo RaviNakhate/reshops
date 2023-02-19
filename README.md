@@ -1,4 +1,4 @@
-## Shopping-cart
+## Reshops (shopping-cart)
 
 - It is shopping cart functionality of e-commerce site.
 - Live site (https://ravinakhate.github.io/reshops/).
