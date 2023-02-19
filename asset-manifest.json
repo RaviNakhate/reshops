@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reshops/static/css/main.b9835948.css",
-    "main.js": "/reshops/static/js/main.a4bcd1d2.js",
+    "main.js": "/reshops/static/js/main.6892ad7e.js",
     "static/media/photoframe.jpg": "/reshops/static/media/photoframe.c704de04243e9700cac3.jpg",
     "static/media/logo.png": "/reshops/static/media/logo.336c233e23b814d79349.png",
     "static/media/bag.jpg": "/reshops/static/media/bag.e92c3d517c3092b8ff62.jpg",
@@ -15,10 +15,10 @@
     "static/media/charger.jpg": "/reshops/static/media/charger.2bfa3d0cafff0c6f0ed8.jpg",
     "index.html": "/reshops/index.html",
     "main.b9835948.css.map": "/reshops/static/css/main.b9835948.css.map",
-    "main.a4bcd1d2.js.map": "/reshops/static/js/main.a4bcd1d2.js.map"
+    "main.6892ad7e.js.map": "/reshops/static/js/main.6892ad7e.js.map"
   },
   "entrypoints": [
     "static/css/main.b9835948.css",
-    "static/js/main.a4bcd1d2.js"
+    "static/js/main.6892ad7e.js"
   ]
 }
