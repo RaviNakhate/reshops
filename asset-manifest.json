@@ -1,14 +1,24 @@
 {
   "files": {
-    "main.css": "/movietime/static/css/main.12f82e70.css",
-    "main.js": "/movietime/static/js/main.dbe9f221.js",
-    "static/media/noimg.jpg": "/movietime/static/media/noimg.8b15b0e2ec92f06edc58.jpg",
-    "index.html": "/movietime/index.html",
-    "main.12f82e70.css.map": "/movietime/static/css/main.12f82e70.css.map",
-    "main.dbe9f221.js.map": "/movietime/static/js/main.dbe9f221.js.map"
+    "main.css": "/reshops/static/css/main.238969c9.css",
+    "main.js": "/reshops/static/js/main.4342c452.js",
+    "static/media/photoframe.jpg": "/reshops/static/media/photoframe.c704de04243e9700cac3.jpg",
+    "static/media/logo.png": "/reshops/static/media/logo.336c233e23b814d79349.png",
+    "static/media/bag.jpg": "/reshops/static/media/bag.e92c3d517c3092b8ff62.jpg",
+    "static/media/tshirt.jpg": "/reshops/static/media/tshirt.4509e3fb442b6b6c9dec.jpg",
+    "static/media/earphone.jpg": "/reshops/static/media/earphone.7e453d4060550f72b965.jpg",
+    "static/media/gamepad.jpg": "/reshops/static/media/gamepad.10cce51b84e1d84729f1.jpg",
+    "static/media/iphone.jpg": "/reshops/static/media/iphone.d4044f1267509e94146b.jpg",
+    "static/media/earbuds.jpg": "/reshops/static/media/earbuds.b59beed8fe48f92ff51d.jpg",
+    "static/media/lamp.jpg": "/reshops/static/media/lamp.b4ef5159b42be99c5235.jpg",
+    "static/media/mouse.jpg": "/reshops/static/media/mouse.e29b6b51cc4805647ca6.jpg",
+    "static/media/charger.jpg": "/reshops/static/media/charger.2bfa3d0cafff0c6f0ed8.jpg",
+    "index.html": "/reshops/index.html",
+    "main.238969c9.css.map": "/reshops/static/css/main.238969c9.css.map",
+    "main.4342c452.js.map": "/reshops/static/js/main.4342c452.js.map"
   },
   "entrypoints": [
-    "static/css/main.12f82e70.css",
-    "static/js/main.dbe9f221.js"
+    "static/css/main.238969c9.css",
+    "static/js/main.4342c452.js"
   ]
 }
