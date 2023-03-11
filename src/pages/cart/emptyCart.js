@@ -1,5 +1,5 @@
 import React from "react";
-import Cart from "../../../assets/cart.png";
+import Cart from "../../assets/cart.png";
 import { useNavigate } from "react-router-dom";
 
 function EmptyCart() {

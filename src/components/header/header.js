@@ -161,7 +161,7 @@ const Header = forwardRef(({ open, setOpen }, ref) => {
                 navigate("/cart");
               }}
             >
-              {cart.length > 0 ? (
+              {cart.length ? (
                 <span className="badge badge-warning">{cart.length}</span>
               ) : (
                 ""

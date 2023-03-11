@@ -19,7 +19,6 @@ const filterState = (state = filterObj, { type, payload }) => {
       };
     case "rating":
       state.filterRating = payload;
-      console.log(state.filterRating);
       return { ...state };
     case "search":
       return { ...state, filtersearch: payload };
@@ -30,6 +29,9 @@ const filterState = (state = filterObj, { type, payload }) => {
 
 const productState = (state = productObj, { type, payload: object }) => {
   switch (type) {
+    case "updateCart":
+      state.cart = object.cart;
+      return { ...state, cart: [...state.cart] };
     case "addToCart":
       let index = state.cart.findIndex((obj) => {
         if (obj.id == object.val.id) {
@@ -39,9 +41,9 @@ const productState = (state = productObj, { type, payload: object }) => {
       if (index == -1) {
         // not present
         object.val.qty = 1;
+        state.cart = [...state.cart, object.val];
         return {
           ...state,
-          cart: [...state.cart, object.val],
         };
       } else {
         // present
@@ -61,14 +63,14 @@ const productState = (state = productObj, { type, payload: object }) => {
         cart: [...state.cart],
       };
     case "remove":
-      const res = state.cart.filter((x, idnum) => {
+      const newCart = state.cart.filter((x, idnum) => {
         if (idnum !== object.id) {
           return 1;
         }
       });
       return {
         ...state,
-        cart: res,
+        cart: newCart,
       };
     default:
       return { ...state };

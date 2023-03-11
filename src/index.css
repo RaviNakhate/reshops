@@ -10,3 +10,13 @@ html {
   display: flex;
   flex-direction: column;
 }
+
+.name-div {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.cursor-pointer {
+  cursor: pointer;
+}

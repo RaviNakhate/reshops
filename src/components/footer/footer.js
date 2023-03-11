@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router";
 import "./footer.css";
 
 function Footer() {
+  const naviage = useNavigate();
   return (
     <>
       <footer className="footerDistributed">
@@ -31,6 +33,26 @@ function Footer() {
             <a href="/">Home</a>
             {" | "}
             <a href="/cart">Cart</a>
+            {" | "}
+            <a
+              href=""
+              onClick={() => {
+                localStorage.clear();
+                naviage("/register");
+              }}
+            >
+              Register
+            </a>
+            {" | "}
+            <a
+              href=""
+              onClick={() => {
+                localStorage.clear();
+                naviage("/register");
+              }}
+            >
+              Login
+            </a>
           </p>
 
           <p className="footerCompany">

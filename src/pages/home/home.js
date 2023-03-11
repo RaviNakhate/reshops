@@ -2,15 +2,54 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import filter from "../../methods/filter";
 import "./home.css";
+import api from "../../api";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router";
 
 function Home() {
+  const navigate = useNavigate();
   const {
     productState: { product },
+    productState: { cart },
     filterState,
   } = useSelector((state) => state);
   const dispatch = useDispatch();
 
   const data = filter(product, filterState);
+
+  const addCart = async () => {
+    const body = { cart };
+    const response = await api.addCart(body);
+
+    if (response.request.status != 200) {
+      toast.error(response.response.data.err.message, "error");
+    }
+  };
+
+  const getCart = async () => {
+    const response = await api.getCart();
+
+    if (response.request.status != 200) {
+      toast.error(response.response.data.err.message, "error");
+    } else {
+      if (response.data.err?.message == "user not login") {
+        navigate("/register");
+      } else {
+        dispatch({ type: "updateCart", payload: { cart: response.data.cart } });
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (localStorage.getItem("id") && localStorage.getItem("token")) {
+      getCart();
+    }
+  }, []);
+
+  useEffect(() => {
+    addCart();
+  }, [cart]);
+
   return (
     <>
       <section className="section">
