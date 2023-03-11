@@ -12,7 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <div className="app">
-      <BrowserRouter>
+      <BrowserRouter basename="/reshops/">
         <ToastContainer position="top-left" pauseOnHover={false} />
         <Header />
         <div className="name-div">
